@@ -8,7 +8,7 @@ import redisClient from '../utils/redis';
 import verifyBasicAuth from '../utils/auth';
 
 class AuthController {
-  // GET /connect - Sign-in the user by generating a token
+  // GET /connect
   static async getConnect(req, res) {
     const authHeader = req.header('Authorization');
 
